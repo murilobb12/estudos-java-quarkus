@@ -5,15 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f070e06-f99d-496f-9fd6-c517b892ffbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Operação IIB/Operações IIB.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Operação IIB/Operações IIB.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/murilo/model/bndes/SolicitacaoRetorno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/murilo/model/bndes/SolicitacaoRetorno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/murilo/resource/BndesResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/murilo/resource/BndesResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/murilo/service/BndesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/murilo/service/BndesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Operação IIB/Operações IIB.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/build-metrics.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GreetingConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/AmortizacaoEnvioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/AmortizacaoEnvioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/EntradaLoteSolicitacoesHonraDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/EntradaLoteSolicitacoesHonraDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/Erros.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/Erros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/EstadoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/EstadoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/OcorrenciaValidacaoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/OcorrenciaValidacaoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoHonraConsultaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoHonraConsultaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoHonraEnvioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoHonraEnvioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoRetorno.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoRetorno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoServico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/SolicitacaoServico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/model/bndes/Status.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/resource/BndesResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/resource/BndesResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/restClient/BndesProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/restClient/BndesProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/service/BndesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/service/BndesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/token/GerarToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/token/GerarToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/null/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/null/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/murilo/GreetingResourceIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/murilo/GreetingResourceIT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/murilo/GreetingResourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/murilo/GreetingResourceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +43,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/br/com/murilo/resource/BndesResource.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
