@@ -1,0 +1,34 @@
+Consultar resultado de um protocolo de solicitações de honra
+
+	GET /v1/honra/solicitacoes/{idSolicitacao}
+
+	Parameters
+		-Type: Path
+		-Name: idSolicitação -required-
+		-Description: Identificador do protocolo de solicitações de honra.
+		-Schema: integer(int32)
+
+	Responses:
+		HTTP Code: 200
+			-Description: Status do lote de solicitações de honra.
+			-Schema: SolicitacaoRetorno.class
+		HTTP Code: 202
+			-Description: Lote de solicitações de honra recebido e aprovado.
+			-Schema: SaidaLoteSolicitacoesHonraDTO.class
+		HTTP Code: 303
+			-Description: Lote de solicitações de honra substituído.
+			-Schema: SaidaLoteSOlicitacoesHonraDTO.class
+		HTTP Code: 400
+			-Description: Erros encontrados no lote de solicitações de honra.
+			-Schema:<OcorrenciaValidacaoDTO.class> array
+		HTTP Code: 404
+			-Description: Solicitação não encontrada
+			-Schema: No content
+
+	Consumes:
+		-application/json; charset=utf-8
+	Produces:
+		-application/json
+	Tags:
+		-consulta
+		-solicitacoes honra

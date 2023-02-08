@@ -1,0 +1,13 @@
+-Documentação Loja API
+https://www.bndes.gov.br/wps/portal/site/home/financiamento/garantias/peac/documentos-para-desenvolvedores
+
+-Documentação Integração API
+https://www.bndes.gov.br/wps/wcm/connect/site/da95babc-5865-4092-8abd-892dd5c58403/Documentacao_da_API_PEAC-1.2.11-SNAPSHOT.html?MOD=AJPERES&CVID=oaSP7ra#_limitecontratacaodto
+
+
+-Documentação BNDES 
+https://www.bndes.gov.br/sbn/BNDES_online/
+
+
+
+

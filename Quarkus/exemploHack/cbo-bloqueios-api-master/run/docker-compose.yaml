@@ -1,0 +1,119 @@
+version: "3.4"
+services:
+
+  cbo-bloqueios-api:
+    container_name: cbo-bloqueios-api
+    image: cbo-bloqueios-api:latest
+    # se estiver rodando docker em windows, comentar com # a linha abaixo, do parametro user:
+    user: "${myUID}:${myGroup}"
+    build:
+      context: ../
+      dockerfile: ./Dockerfile.dev
+      args:
+        - DB2_USER=$DB_USER
+        - DB2_PASSWORD=$DB_PASSWORD
+    environment:
+      # Opção para jmx debug
+      - JAVA_JMX_DEBUG=-Djava.rmi.server.hostname=0.0.0.0 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.rmi.port=8999 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
+      # Configuracao do LOG
+      - QUARKUS_LOG_CONSOLE_ENABLE=true
+      - QUARKUS_LOG_CONSOLE_LEVEL=DEBUG
+      # OPENAPI - SWAGGER
+      - QUARKUS_SMALLRYE_OPENAPI_PATH=/api-docs-json
+      - QUARKUS_SWAGGER_UI_PATH=/api-docs
+      - QUARKUS_SWAGGER_UI_ALWAYS_INCLUDE=true
+      # Exibir no log as queries executadas nao utilize no ambiente de produção
+      - QUARKUS_HIBERNATE_ORM_LOG_SQL=true
+      # Roteiro: https://fontes.intranet.bb.com.br/dev/publico/roteiros/-/blob/master/db2/UsandoDb2EmProjetoJavaQuarkus.md
+      # Descomente as 4 linhas abaixo que comecem com - para testar usando o DB2 de desenvolvimento.
+      # Linha 1     - String da conexao de banco, e o endereço para acessar o banco de dados
+      #               Confirme se o endereco esta correto, no caso estamos usando o DSDB2D01
+      # Linha 2 e 3 - Usuario e senha de acesso, sera utilizado o seu usuario e senha informados na
+      #               execução do script run.sh
+      # * Configuracao do Quarkus para o tipo de banco e do driver e do dialeto estão
+      #   configurados no aplication.properties do seu projeto
+      - QUARKUS_DATASOURCE_JDBC_URL=jdbc:db2://dsdb2d01.plexdes.bb.com.br:446/DSDB2D01:clientProgramName=APPCLOUD;clientApplicationInformation=cbo-bloqueios-api;
+      - QUARKUS_DATASOURCE_USERNAME=$DB2_USER
+      - QUARKUS_DATASOURCE_PASSWORD=$DB2_PASSWORD
+      # OPENTRACING - JAEGER
+      - QUARKUS_JAEGER_SERVICE_NAME=cbo-bloqueios-api
+      - QUARKUS_JAEGER_SAMPLER_TYPE=const
+      - QUARKUS_JAEGER_SAMPLER_PARAM=1
+      - QUARKUS_JAEGER_AGENT_HOST_PORT=jaeger
+      # Configuracao do Maven(m2) para executar no docker compose, usar apenas em desenv local.
+      - REPO_LOCAL=/tmp/.m2/repository
+    volumes:
+      - maven-repo:$HOME/.m2/repository
+      - $HOME/.m2/repository:/temp/.m2/repository
+      - $HOME/.m2/settings.xml:/usr/share/java/maven-3/conf/settings.xml
+      - $PWD:/app
+    networks:
+      - cbo-bloqueios-api-net
+    ports:
+      - "8080:8080" # Server
+      - "5005:5005" # DEBUG Não uilizar nos ambientes de producao/homologacao
+      - "8999:8999" # DEBUG JMX Não utilizar nos ambientes de producao/homologacao
+  # =====================================================================================
+  #   Imagens para executar localmente, elas ja estarão disponiveis para seu namespace
+  # =====================================================================================
+  jaeger:
+    image: jaegertracing/all-in-one
+    environment:
+      - COLLECTOR_ZIPKIN_HTTP_PORT=9411
+    ports:
+      - "5775:5775/udp"
+      - "6831:6831/udp"
+      - "6832:6832/udp"
+      - "5778:5778"
+      - "16686:16686"
+      - "14268:14268"
+      - "9411:9411"
+    networks:
+      - cbo-bloqueios-api-net
+      
+  iib-curio:
+    container_name: iib-curio
+    image: atf.intranet.bb.com.br:5001/bb/iib/iib-curio:0.6.5
+    ports:
+      - '8081:8081'
+    networks:
+      - cbo-bloqueios-api-net
+    environment:
+      - CURIO_SIGLA_APLICACAO=cbo
+      - CURIO_APLICACAO_HOST=http://cbo-bloqueios-api:8080
+      - BR_COM_BB_CBO_RESOURCES_INTERFACECONSUMIDOR_MP_REST_URL=http://iib-curio:8081
+      - CURIO_CACHE_CONFIGURACAO_IIB=iib-slave.redis.bdh.desenv.bb.com.br
+      - CURIO_CACHE_CONFIGURACAO_IIB_ID=iib:configuracao:k8s-integracao
+      - CURIO_IIB_LOG_LEVEL=FINEST
+      - CURIO_ATIVAR_MSG=ON
+      - CURIO_OP_CONSUMIDOR=br.com.bb.mci.operacao:Op207827-v1:1.3.0
+      - CURIO_OP_PROVEDOR=br.com.bb.cbo.operacao:Op6454625-v1:4.3.0|br.com.bb.cbo.operacao:Op6463945-v1:4.3.0|br.com.bb.cbo.operacao:Op6463960-v1:4.3.0|br.com.bb.cbo.operacao:Op6463996-v1:4.3.0|br.com.bb.cbo.operacao:Op6483891-v1:4.3.0-SNAPSHOT
+      - CURIO_MODO_DESENVOLVIMENTO=true
+      - CURIO_TIMEOUT_PROXY=20000
+      - CURIO_TIMEOUT_DOWNLOAD_ATF=20000
+      - CURIO_TIMEOUT_API_ATF=20000
+      - IDH_CHAVE_APLICACAO="MDAwMTs0ODA0OzY0NTUxODI7MTswMDAwMDAwMDI7RUM7UEtDUyM4O01FRUNBUUF3RXdZSEtvWkl6ajBDQVFZSUtvWkl6ajBEQVFjRUp6QWxBZ0VCQkNDVkVUSU5NQVZhTGkrK1VUVWt6b0s0L2p1Y29uRDVmYkc5dDI3NlNLNXF4dz09O1guNTA5O01Ga3dFd1lIS29aSXpqMENBUVlJS29aSXpqMERBUWNEUWdBRTlOQmZXNmlmaVJkZnlKYTBGVG5LMTdramhaZVd4NW5GR0lEcUNrbnFiVEdWNFdPbmdjeEFOajFKN2NCNVUyOU5jTFZrSytoeC9EdFRqMDUvQ2luam5RPT07SURITUYwMDE7RUM7WC41MDk7TUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFRk53WXJCNXdKSW9JSE5ZNE14T09kbndJU0doL2tFc1BZelpaKzMvNC9za2JOQzVka0h4VUhSd0UrVGVPaGtnZm1VN1ZKeHZoa0o5N1NQRms1RzdzaWc9PQ=="
+      
+volumes:
+  maven-repo:
+  # ====================================================================================
+  #    Configuração da rede do docker para este microservico
+  #    Default: 192.168.203.192/27
+  #    Caso você já tenha subido outro microservico nesta rede, você pode executar outras
+  #  usando um dos enderecos a seguir:
+  #    - 192.168.203.224/27
+  #    Neste caso não se esqueça de mudar os mapeamentos das portas para o localhost para
+  #  que não haja conflito, conforme exemplo abaixo:
+  #    Microservico 1:
+  #       ports:
+  #         - "8080:8080" (porta 8080 do localhost vai mapear a 8080 do microservico)
+  #    Microservico 2:
+  #       ports:
+  #         - "8081:8080" (porta 8081 do localhost vai mapear a 8080 do microservico)
+  # ====================================================================================
+networks:
+  cbo-bloqueios-api-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.203.192/27

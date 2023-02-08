@@ -1,0 +1,34 @@
+ 1. Adicionar dependencia
+2. Adicionar suporte a credenciais a classe model Cliente
+3. Adicionar classe para definir roles (admin, cliente...)
+4. Adicionar ao nosso POST para cliente suporte para:
+
+    a) Encriptar a senha
+    b) Salvar os novos campos
+    c) Incluir o tipo de acesso (role) CLIENTE para todos (por seguranca)
+
+5. Adicionar roles aceitas em determinados endpoints. Exemplo: delete cliente
+6. Adicionar suporte a find by email (para credenciais) na classe DAO
+7. Implementar classe para UserDetails. Uma classe que vai retornar somente o que eh necessario para autenticacao, ao inves de todo o cliente
+8. Adicionar classe de servico para buscar cliente pelo email. Gera uma excecao caso ele nao seja encontrado (login)
+9. Login DTO. Utilizado para a pagina de login, aceita somente email e senha
+10. Security Constantes. Definir uma classe que contenha:
+
+    a) SECRET (no qual os JWTs tokens vao ser gerados)
+    b) EXPIRATION_TIME: quanto tempo o JWT eh validoo
+    c) TOKEN_PREFIX: Inicio do token gerado. Geralmente Bearer
+    d) HEADER_STRING: Header onde o token sera procurado, quando uma request for feita (para autorizacao). Geralmente Authorization
+
+11. JWT utils: classe para a criacao de tokens JWT, baseado no email, SECRET e roles do usuario.
+12. JWTAuthenticationFilter: Classe que extende UsernamePasswordAuthenticationFilter para gerenciar o login da aplicacao. Oferece a possibilidade de reescrever o /login e o override dos metodos:
+
+    a) attemptAuthentication: Quando a pagina /login for acessada, a request sera trazida para aqui, afim de tentar autenticar o valor. Eh esperado que email e senha sejam passados em um metodo POST para esse /login
+    b) successfulAuthentication: Caso a autenticacao seja feita com sucesso, cria-se um novo token valido, baseado no email e roles desse email
+
+13. JWTAuthorizationFilter: Classe que extende BasicAuthenticationFilter para gerenciar a validacao de JWT tokens nas requests (AuthenticationManager). Faz o override do metodo:
+a) doFilterInternal: filtro interno (a ser aplicada em todas as requisicoes, a nao ser as URLs marcadas como excessao).
+O metodo:
+i. Tenta ler o token do header (definido no passo 10)
+ii. Valida o token e caso seja valido, adiciona ao contexto da requisicao e permite que ela continue para o seu endpoint de destino.
+iii. Caso nao haja token ou seja invalido, nao adiciona nada ao contexto e a requisicao falha com HTTP 403 Forbidden.
+14. WebSecurityConfig: Classe de configuracao geral para filter chain.Intercepta todas as requisicoes, aceita excecoes de URL, identifica o servico para autenticacao (UserServiceImpl + JWTAuthenticationFilter) e tambem JWT autorization (JWTAuthorizationFilter). Caso a requisicao nao siga as regras esperadas, bloqueia a request.

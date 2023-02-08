@@ -1,0 +1,95 @@
+Regras de Negócio - Solicitação de Honra
+
+	Portal de comunicação:
+		-Portal FGI PEAC
+			-Realizada em área logada
+			-Via envio e recebimento de arquivos
+			-Via telas(interface gráfica)
+			-Documentação: https://www.bndes.gov.br/wps/portal/site/home/financiamento/garantias/peac/documentos-para-desenvolvedores
+		-API FGI PEAC
+			-Interação pode ser realizada máquina a máquina
+			-Documentação: https://www.bndes.gov.br/wps/portal/site/home/financiamento/garantias/peac/documentos-para-desenvolvedores
+		-BNDES Online
+			-Via api
+			-Via telas
+			-Documentação: https://www.bndes.gov.br/sbn/BNDES_online/index.html
+		-Horário Portais: segunda a sexta-feira, das 8h às 20h, exceto em feriados nacionais.
+
+
+
+		-API FGI PEAC	
+			-Roteiro de acesso à API FGI PEAC e a documentação da API estão disponíveis em https://www.bndes.gov.br/wps/portal/site/home/financiamento/peac/documentos-para-desenvolvedores
+
+			-Validação da solicitação:
+				-Validação do formato:
+					-Os dados enviados deverão estar no formato JSON. Caso a análise identifique inconsistência de formato, o protocolo será rejeitado.
+				-Validação do conteúdo:
+					-Deve estar compatível com os dados financeiros referentes à operação prestados pelo Agente Financeiro ao FGI PEAC. Se houver disponibilidade, também será checada compatibilidade com os dados prestados ao Sistema de Informações de Créditos do Banco Central do Brasil. Também são verificados o cumprimento das obrigações financeiras perante o FGI, e, para operações de repasse, o cumprimento das obrigações financeiras perante o bndes ou a finame na respectiva operação. Em caso de eventual indício de discrepância, o lote poderá ser recusado.
+				-Retorno da Crítica:
+					-O retorno ocorrerá da forma descrita na documentação da API. Adicionalmente, o lote de solicitações de honra enviado e seu arquivo de retorno ficarão disponíveis na área de coonsulta de protocolos do Portal FGI PEAC.
+
+			-Substituição de Lote Mensal
+				-Dentro do período compreendido entre as datas fixadas para o encaminhamento de solicitações de honra de garantia e do prazo para a solicitação de honra, será possível a substituição, pelo Agente Financeiro, do lote mensal de solicitação encaminhado naquele mês. O último lote mensal encaminhado no período, com formato e conteúdo considerados válidos, substituirá eventual lote anterior, e será o único considerado para efeito de processamento. A cada substituição, o processo de validação será novamente aplicado e nova mensagem e arquivo de retorno serão disponibilizados pelo Agente.
+				É importante destacar que, independentemente da interface, a subistituição ocorerrá. Por exemplo, se um arquivo válido for encaminhado após um protocolo de solicitação de honra válido via tela, ocorrerá a substituição.
+			-Cancelamento de Lote Mensal
+				-Para cancelamento de lote mensal enviado, o Agente financeiro poderá utilizar a tela, para excluir as solicitações, API, ou mesmo enviar um arquivo, no qual o atributo onde é especificada a lista de solicitações de honra deverá informar uma lista vazia.
+				Em qualquer desses casos, não constará solicitação de honra para o Agente Financeiro, a menos que envie novo lote mensal válido.
+
+			-Processamento da Solicitação de Honra
+				-Previamente ao processo da solicitação de honra das solicitações válidas, serão novamente verificadas, ao final do mês, as condições constatntes. O processamento será efetuado para as solicitações de honra que satisfaçam estas condições.
+				O pagamento de honra, nos termos do Regulamento do FGI PEAC, será realizado no dia 15 do mês subsequente à solicitação aprovada ou no dia útil imediatamente posterior, nos termos descritos no Regulamento do FGI PEAC.
+				São excluídas da garantia outorgada pelo FGI PEAC as liberações de crédito cujo ECG, se aplicável, não houver sido pago.
+				No caso de nova solicitação de honra relativa a contrato que tenha tido sua cobertura suspensa por conta da Cobertura Máxima de Inadimplência, será levada em consideração a data de protocolo da primeira solicitação de honra para consideração dos 12 meses anteriores à solicitação, desde que a primeira solicitação de honra tenha satisfeito integralmente as condições.
+				O extrato de previsão de pagamentos de honra de cada mês estará disponível no Portal FGI PEAC, com informações das solicitações de honra efetivamente processadas e dos valores a serem pagos pelo FGI PEAC no período.
+
+
+Formato de campos a serem enviados:
+	-campo:cnpjAgenteFinanceiro
+		-formato: A14
+		-obrigatório: Sim
+		-descrição: N/a
+		-observações: N/a
+	-campo: idOperacaoAgenteCreditoLivre
+		-formato: A20
+		-obrigatorio: Sim(Em caso de operação Crédito Livre)
+		-descrição: Identificador da operação no Agente Financeiro
+		-observações: O identificador da operação no sistema do Agente Financeiro deve ser igual ao informado ao FGI PEAC quando da solicitação de outorga da garantia. SOmente deve ser preenchido para Operações com Recursos Livres ou de Outras Fontes.
+	-campo: valorSaldoDevedorDePrincipal
+		-formato: N19.2
+		-obrigatório: Sim
+		-descrição: Saldo de principal momento do envio da solicitação de honra, considerando deduções de valores recebidos eventualmente. Valor do Saldo Devedor de principal do Tomador da Crédito para o referido contrato, incluindo o valor cobrado em nome do FGI PEAC.
+		-observações: Usa ponto decimal
+	-campo: valorSaldoDeJurosNaNormalidade
+		-formato: N19.2
+		-obrigatoriedade: Sim
+		-descrição: Saldo de juros no momento do envio da solicitação de honra. Saldo de juros no momentoValor do Saldo de Juros na Normalidade do Tomador da Crédito para o referido contrato, incluindo o valor cobrado em nome do FGI PEAC.
+		-observação: Usa ponto decimal
+	-campo: valorEncargosMoratorios
+		-formato: N19.2
+		-obrigatoriedade: Sim
+		-descrição: Valor do saldo de Encargos Moratórios do Tomador da Crédito para o referido contrato, incluindo o valor cobrado em nome do FGI PEAC.
+	-campo: amortizacoesAteADataDaSolicitacaoDeHonra 
+		-formato: N/a
+		-obrigatoriedade: Sim
+		-descrição: O Fluxo completo das amortizações já ocorridas até o momento do envio da solicitação de honra.
+		-observações: N/a
+	-campo: dataVencimento 
+		-formato: A10
+		-obrigatoriedade: Sim
+		-descrição: Data de vencimento da amortização. Apenas amortização de principal, sem incorporação de juros ao principal.
+		Deve existir uma amortizalção prevista nesta data perante o FGI PEAC.
+		-observações: Formato AAAA-MM-DD
+	-campo: valorDevido
+		-formato: N19.2
+		-obrigatoriedade: Sim
+		-descrição: Valor de amortização devido. Apenas amortização de principal, sem incorporação de juros ao principal. Este valor precisa estar igual ao valor perante o FGI PEAC.
+		-observações: Usa ponto decimal
+	-campo: valorRecebido
+		-formato: N19.2
+		-obrigatoriedad: Sim
+		-descrição: Valor de amortização recebido. Apenas amortização de principal, sem incorporação de juros ao principal.
+		Deve ser informado 0.00 se não houve nenhum recebimento relativo a amortização.
+
+
+
+	

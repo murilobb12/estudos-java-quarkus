@@ -1,0 +1,4 @@
+-Dentro do package service, devemos colocar todas as classes que representam as regras de negócio da nossa aplicação.
+-Por ser utilizada dentro do nosso endpoint, devemos passar a anotação: @ApplicationScopped
+
+

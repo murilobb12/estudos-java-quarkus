@@ -1,0 +1,9 @@
+br\com\murilo\rest\BitcoinResource.class
+br\com\murilo\service\BitcoinService.class
+br\com\murilo\model\Funcionario.class
+br\com\murilo\rest\FuncionarioDepartamentoResource.class
+br\com\murilo\model\Bitcoin.class
+META-INF\panache-archive.marker
+br\com\murilo\GreetingResource.class
+br\com\murilo\model\Departamento.class
+br\com\murilo\dto\FuncionarioPorDepartamentoResponse.class

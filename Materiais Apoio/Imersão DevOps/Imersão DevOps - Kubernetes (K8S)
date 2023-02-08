@@ -1,0 +1,49 @@
+Imersão DevOps - Kubernetes (K8S)
+
+Kubernetes é um orquestrador de contêiners e automatizando os processos
+
+Cluster é um agrupamento de contêiners que compartilham os mesmos recursos computacionais, como armazenamento. Um cluster de container permite a execução de centenas de containers de aplicações, de forma eficiente e sem concorrência.
+
+-Garantir resiliência e escalabilidade
+	-Garantir que a aplicação não caia
+	-Escalar e adequar a aplicação com o necessário
+-Balanceamento de carga
+	-Evitar sobrecarga das réplicas
+-Service Discovery
+	-Cataloga o endereço de cada processo que foi enviado
+-Self Healing
+	-Fica verificando o estado de um container, e caso ele identifique que não está saudável, ele restarta o container buscando recuperação
+-É indicado para aplicações que não podem cair e devem ter alta disponibilidade, já que minutos fora do ar, pode resultar em milhares de reais.
+-É usado em microsserviços, para escalar eles individualmente, sem ter que aplicar para um monolíto
+
+Preparação do ambiente
+	-Instalar chocolatey
+	-Acessar o site, e instalar na versão individual
+		-Colar o comando no PowerShell
+	-Instalar o K3d
+		-k3d.io
+		-Pegar o ocmando para rodar no chocolatey
+			-choco install k3d
+	-Instalar Kubectl
+		-kubectl install
+		-Pegar o comando para rodar no chocolatey
+			-choco install kubernetes-cli
+
+
+
+
+
+
+Comandos:	
+	-k3d cluster create
+		-Cria o cluster do kubernetes com o k3d
+		-Quando é criado o cluster, ele cria também o load balance, para fazer o balanceamento entre os nós
+	-k3d cluster create --no--lb
+		-Comando para criar o cluster sem o load balance
+	-k3d cluster create meucluster --servers 3 --agents 3
+		-Cria o cluster com 3 servers e 3 agents, nesse caso a gente precisa deixar o load balance
+	-kubectl get nodes
+		-Lista os nós do clusters k8s
+
+	-k3d cluster list
+		-listar os clusters criados

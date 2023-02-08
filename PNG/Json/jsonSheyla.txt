@@ -1,0 +1,284 @@
+{
+  "cnpjAgenteFinanceiro": "00000000000191",
+  "solicitacoesHonra": [
+    {
+      "idOperacaoAgenteCreditoLivre": "763105042",
+      "valorSaldoDevedorDePrincipal": 73149.79,
+      "valorSaldoDeJurosNaNormalidade": 19216.76,
+      "valorEncargosMoratorios": 2595.21,
+      "amortizacoesAteADataDaSolicitacaoDeHonra": [
+        {
+          "dataVencimento": "2021-10-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 1666.67
+        },
+        {
+          "dataVencimento": "2021-11-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 1666.67
+        },
+        {
+          "dataVencimento": "2021-12-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 1666.67
+        },
+        {
+          "dataVencimento": "2022-01-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 1666.67
+        },
+        {
+          "dataVencimento": "2022-02-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 183.53
+        },
+        {
+          "dataVencimento": "2022-03-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-04-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-05-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-06-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-07-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-08-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-09-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-10-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-11-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-12-22",
+          "valorDevido": 1666.67,
+          "valorRecebido": 0
+        }
+      ]
+    },
+    {
+      "idOperacaoAgenteCreditoLivre": "291312834",
+      "valorSaldoDevedorDePrincipal": 64466.58,
+      "valorSaldoDeJurosNaNormalidade": 18069.12,
+      "valorEncargosMoratorios": 4635.41,
+      "amortizacoesAteADataDaSolicitacaoDeHonra": [
+        {
+          "dataVencimento": "2021-04-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-05-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-06-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-07-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-08-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-09-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-10-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-11-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2021-12-28",
+          "valorDevido": 3100,
+          "valorRecebido": 3100
+        },
+        {
+          "dataVencimento": "2022-01-28",
+          "valorDevido": 3100,
+          "valorRecebido": 633.42
+        },
+        {
+          "dataVencimento": "2022-02-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-03-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-04-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-05-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-06-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-07-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-08-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-09-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-10-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-11-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-12-28",
+          "valorDevido": 3100,
+          "valorRecebido": 0
+        }
+      ]
+    },
+    {
+      "idOperacaoAgenteCreditoLivre": "698803668",
+      "valorSaldoDevedorDePrincipal": 134845.2,
+      "valorSaldoDeJurosNaNormalidade": 36943.47,
+      "valorEncargosMoratorios": 5124.34,
+      "amortizacoesAteADataDaSolicitacaoDeHonra": [
+        {
+          "dataVencimento": "2021-11-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 3191.49
+        },
+        {
+          "dataVencimento": "2021-12-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 3191.49
+        },
+        {
+          "dataVencimento": "2022-01-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 3191.49
+        },
+        {
+          "dataVencimento": "2022-02-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 3191.49
+        },
+        {
+          "dataVencimento": "2022-03-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 2388.84
+        },
+        {
+          "dataVencimento": "2022-04-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-05-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-06-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-07-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-08-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-09-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-10-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-11-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2022-12-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        },
+        {
+          "dataVencimento": "2023-01-01",
+          "valorDevido": 3191.49,
+          "valorRecebido": 0
+        }
+      ]
+    }
+  ]
+}

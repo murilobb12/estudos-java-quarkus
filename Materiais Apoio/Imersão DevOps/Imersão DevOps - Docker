@@ -1,0 +1,60 @@
+Docker
+	-Conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêiners. Os Contêiners são isolados uns dos outros e agurpma seus próprios softwares, bibliotecas e arquivos de configuração.
+
+	-Tem 3 divisões:
+		-Client: onde passamos os camandos: docker build, docker pull, docker run, etc
+		-DOCKER_HOST: possui os contêiners que serão utilizados para gerar as imagens, que são executados pelo Docker Daemon
+		-Registry: as imagens geradas ficam armazenadas nessa divisão
+
+1. Instalar o WSL via PowerShell 
+	1.1 wsl --install
+2. Instalar o Docker Desktop
+
+Comandos Docker:
+	-Docker container run {NOME_CONTAINER}
+	-Docker container run -it {NOME_CONTAINER}
+		-Comando -it faz que o docker seja executado em modo de interação
+	-Docker container rumn -d nginx
+		-Comando -d faz com que o dokcer seja executado em backgoround, e não honere a nossa máquina
+	-Docker container exec -it {ID_CONTAINER} /bin/bash
+		-Comando exec faz com que o execute o container em modo interativo -it
+	-Docker container run -d -p 8080:80 nginx 
+		-Comando -p cria uma bind de porta do localhost:8080 para a porta 80 do Docker
+	-Docker container stop {ID_CONTAINER}
+		-Comando stop faz com que o container seja parado, para que consiga excluir o docker 
+	-Docker build -t {NOME_CONTAINER} -f {CAMINHO_DOCKERFILE} .
+		-Comando para fazer o build do container de acordo ao dockerfile, caso a gente não passe o caminho do dockerfile -f, quando o comando for executado, ele pega o dockerfile da raiz do projeto.
+		-O . serve para falar qual é o diretório em que a imagem tem que ser capturada.
+
+	-Conectar o Docker a um banco de dados
+		-Docker container run -d -p 5432:5432 -e POSTGRES_PASSWORD=Pg@123 -ePOSTGRES_USER=kubenews -e POSTGRES_DB=kubenews postgres
+			-Todas essas informações de variáveis a gente consegue pegar no hub.docker.com
+
+
+DockerFile:
+	-É um meio que utilizamos para criar nossas próprias imagens. Serve como uma receita para criar um container, permitindo definir um ambiente personalizado e próprio para o projeto.
+		-Ex: FROM ubuntu
+			 RUN apt update && apt install git vim curl --yes
+
+Padrão nome Imagem Docker:
+	murilosantos/api-bndes-mu:v1
+	{namespace}/{repositorio}:{tagVersao}
+
+Subindo uma Imagem Docker para o DockerHub:
+	-docker login
+		-inserir usuário e senha
+	-docker push {namespace}/{repositorio}:{tagVersao}
+
+Criar uma nova versão a partir de uma existente
+	-docker tag murilosantos/api-bndes-mu:v1 murilosantos/api-bndes-mu:latest 
+
+
+Caso precisamos subir um container e subir um novo, somente com o Docker não conseguimos realizar essa tarefa, então necessitamos de um orquestrador de containers. E esse orquestrador é o k8s(kubernetes)
+
+Exemplo Dockerfile contendo configurações de uma aplicação em Javascript
+	FROM node //especificar qual será a imagem utilizada, sempre é recomendado que fale qual versão está utilizando, exemplo node:18.11.0
+	WORKDIR /app
+	COPY package*.json ./
+	RUN npm install
+	COPY . .
+	CMD ["nome","server.js"]
