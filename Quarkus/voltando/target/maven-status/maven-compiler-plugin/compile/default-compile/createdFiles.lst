@@ -1,0 +1,4 @@
+br\com\murilo\repository\ClienteRepository.class
+br\com\murilo\model\Cliente.class
+META-INF\panache-archive.marker
+br\com\murilo\GreetingResource.class

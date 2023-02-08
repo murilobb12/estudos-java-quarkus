@@ -1,0 +1,51 @@
+Imersão DEVOPS - Introdução
+
+Dev = Desenvolvimento
+Ops = Operações
+
+DevOps é uma cultura onde preza por boas práticas, uso de ferramentas e de uma filosofia.
+
+
+-Ciclo DevOps
+
+	-Planejamento
+		-O que vai ser feito
+		-Como vai ser feito
+		-Quem vai fazer
+		-Quando será entregue
+		-Métodos ágeis
+		-Ferramentas: Jira, Trello, Agile DevOps, etc... 
+	-Codificação
+		-Fase de codificação e refatoração do código
+		-Ferramentas:
+			-GitHub
+			-GitLab
+			-Git
+			-Linguagem
+			-Ide
+	-Construção
+		-Códigos construídos são convertidos para um entregável
+		-CI
+		-CD
+		-Ferramentas: Maven, Npm, Docker, Jenkins
+	-Teste
+		-São executados testes
+		-Análise de código
+		-Verificação de falha
+		Ferramentas: Junit, SonarCube, etc
+	-Empacotamento
+		-Gera o artefato de entrega
+		-Imagem Docker
+		-JAR
+	-Deploy
+		-Aplicação é entregue no ambiente
+		-Ferramentas: Azzure, AWS, Google, Pipeline CI/CD
+	-Operação
+		-Garantir que a aplicação vai ser executada com estabilidade, confiabilidade e resiliência
+		-Ferramentas: Kubernetes
+	-Monitoramento
+		-Coletar métricas da aplicação
+		-Antecipar a um problema
+		-Ferramentas: Prometheus, Jagger, Grafana, Elastic
+
+

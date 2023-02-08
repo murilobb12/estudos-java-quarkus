@@ -1,0 +1,10 @@
+br\com\murilo\repository\ClienteRepository.class
+br\com\murilo\controller\ClienteController.class
+br\com\murilo\model\Cliente.class
+br\com\murilo\model\Conta.class
+br\com\murilo\service\ContaService.class
+br\com\murilo\service\ClienteService.class
+META-INF\panache-archive.marker
+br\com\murilo\repository\ContaRepository.class
+br\com\murilo\controller\ContaController.class
+br\com\murilo\GreetingResource.class

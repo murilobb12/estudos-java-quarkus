@@ -1,0 +1,1 @@
+INSERT INTO Cliente(id, nome, cpf ) VALUES (1, "Murilo Santos", "38230414874");

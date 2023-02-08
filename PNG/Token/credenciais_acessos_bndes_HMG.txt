@@ -1,0 +1,9 @@
+Consumer Key 
+qeUWrq0fk5emSaqjH0I9TUqsCwsa
+
+Consumer Secret 
+OxigFV21FioVo0Be0CgmpUSMgcUa
+
+Base64
+cWVVV3JxMGZrNWVtU2FxakgwSTlUVXFzQ3dzYTpPeGlnRlYyMUZpb1ZvMEJlMENnbXBVU01nY1Vh
+cWVVV3JxMGZrNWVtU2FxakgwSTlUVXFzQ3dzYTpPeGlnRlYyMUZpb1ZvMEJlMENnbXBVU01nY1Vh

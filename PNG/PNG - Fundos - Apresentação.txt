@@ -1,0 +1,37 @@
+PNG - Fundos
+
+Objetivo do sistema: Como agente financeiro, possibilitar o controle de utilização de fundo garantidor de operações de crédito.
+
+Interfaces: COP, OPR, GRT, GFG.
+
+
+FGO - Fundo de Garantia de Operações
+	-Surgiu a partir da lei 12.087, de 11/11/2009 (que autorizou a participação da União em fundos)
+	- O FGO, cumpre sua finalidade por meio dos seguintes programas de garantia: FGO Original e FGO PRONAMPE.
+
+FGO Original
+	-Trata-se de um fundo que tem por finalidade complementar as garantias necessárias à contratação de operações de crédito pelas médias empresas e pelos micro empreendedores individuais. 
+	-O FGO é administrado pelo BB
+	-Quantidade de operações honradas: 194.173
+	-Valor total honrado R$50bi
+	-Valor total recuperado: R$366mi
+
+FGI PEAC
+	-O FGI(Fundo Garantidor para Investimentos), gerenciado pelo BNDES e instituído pelo PEAC(Programa Emergencial de Acesso a Crédito) do Governo Federal, é uma linha de crédito destinada ao financiamento de Capital de Giro.
+	-Quantidade de operações honradas:
+	-Valor total honrado: R$3mi
+
+PNG - Intercâmbio
+	-Funco: FGO Original e FGO PRONAMPE
+	-Forma: Troca de arquivos sequencial(batch)
+	-Periodicidade: diária
+	
+	-Tipo de fundo: FGI PEAC
+	-Forma: Arquivo JSON(Portal BNDES/API)
+	-Periodicidade: mensal
+
+PNG - HONRA
+	Honrar é amortizar a operação no COP, calcula o saldo em normalidade sem juros, informa para o banco e pergunta ao GRD o percentual de garantia. Então manda ao GFG para honrar essa operação, é enviado essa honra com Operações com inadimplência entre 180 a 320 dias. Então quem cuida da dívida é o PNG e sai da alçada do COP.
+PNG - Regra de Rateio
+
+

@@ -1,0 +1,7 @@
+br\com\proxy\LocalHostProxy.class
+br\com\model\Cliente.class
+br\com\model\Entrada.class
+META-INF\panache-archive.marker
+br\com\rest\ClienteResource.class
+br\com\GreetingResource.class
+br\com\repository\ClienteRepository.class

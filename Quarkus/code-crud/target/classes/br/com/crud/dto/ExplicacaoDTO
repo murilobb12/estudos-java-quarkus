@@ -1,0 +1,2 @@
+-DTO(DATA TRANSFER OBJECT)
+-Serve para tratar a transferência dos dados através de outra camada, assim não expondo de fato a nossa entidade na aplicação.

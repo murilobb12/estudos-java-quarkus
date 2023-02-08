@@ -1,0 +1,20 @@
+Links: 
+	Documentação integração	
+		-https://banco365.sharepoint.com.mcas.ms/sites/CCoE/SitePages/Documento-de-Integra%C3%A7%C3%A3o.aspx
+	Liberação do Proxy na aplicação
+		-https://fontes.intranet.bb.com.br/dev/publico/roteiros/-/blob/master/proxy/proxy.md#1-situa%C3%A7%C3%B5es-frequentes	
+
+
+
+	Padrões de integração a seguir.
+	Padrao 3
+	Padrao 4
+
+
+Autenticação Mútua
+	-Primeiro Reconhecer que o bndes é o bndes
+	-Segundo gerar uma chave privada , uma chave publica para fazer a requisição para o bndes
+
+	Para realizar autenticação Mutua, pode fazer direto pelo java ou pelo Tibico BW
+
+

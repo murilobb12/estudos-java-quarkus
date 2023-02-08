@@ -1,0 +1,15 @@
+imeplementar honras - PNG
+	pegar o recurso de fundos, tem uma garantia e pode fazer jus do recurso que o governo dá.
+
+
+	BNDES 
+		Hoje é batch, mas a conversa com o órgão de troca de informações, via portal, ou gera um arquivo em JSON, e passa por uma validação do portal, e validado por uma pessoa. Ou pode fazer via API.
+			Endpoints
+			Backend - JAVA
+			Estar na Arq3
+			IIB
+			Consultar a monitoração
+
+
+	FGI
+	PEAC

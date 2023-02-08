@@ -1,0 +1,5 @@
+-Dentro do package model, devemos colocar todas as entidades da nossa aplicação.
+-Para a classe que representa a aplicação devemos colocar a anotação: @Entity
+-Devemos extender PanacheEntity para a nossa entidade extender todos os métodos do Panache
+-Caso queira mudar o nome da tabela para representar igual ao bandco de dados, devemos passar a anotação @Table(name = "nome_tabela")
+
