@@ -1,0 +1,4 @@
+br\com\murilo\ExampleResource.class
+br\com\murilo\model\TvSerie.class
+br\com\murilo\resource\TvMazeResource.class
+br\com\murilo\proxy\TvMazeProxy.class

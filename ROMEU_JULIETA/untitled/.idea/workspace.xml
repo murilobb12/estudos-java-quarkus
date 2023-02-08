@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef0da838-b507-4ca6-a3bc-3f8b6a209e65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../porExtenso/chequeExtenso/src/Cheque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../porExtenso/cheque_extenso/src/Cheque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../porExtenso/testeValorCheque/src/TratarCheque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../porExtenso/testeValorCheque/src/TratarChequeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gerar Token/gerarToken/out/production/gerarToken/ConversorCurl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gerar Token/gerarToken/out/production/gerarToken/ConversorCurl2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Gerar Token/gerarToken/src/ConversorCurl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Gerar Token/gerarToken/src/ConversorCurl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RomeuJulietaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RomeuJulietaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/RomeuJulieta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/RomeuJulieta.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/RomeuJulieta.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HzxvYR3zJpWRDBDOoedYXhRyuq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/F7287356/OneDrive - Banco do Brasil S.A/Área de Trabalho/Java/LetsCode/porExtenso"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.RomeuJulietaTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomeuJulietaTest2.passando0RetornaErro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RomeuJulietaTest2" />
+      <option name="METHOD_NAME" value="passando0RetornaErro" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomeuJulietaTest2.passando13Retorna13Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RomeuJulietaTest2" />
+      <option name="METHOD_NAME" value="passando13Retorna13Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomeuJulietaTest2.passandoStringRetornaErro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RomeuJulietaTest2" />
+      <option name="METHOD_NAME" value="passandoStringRetornaErro" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomeuJulietaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RomeuJulietaTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RomeuJulietaTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.RomeuJulietaTest2.passandoStringRetornaErro" />
+        <item itemvalue="JUnit.RomeuJulietaTest2.passando0RetornaErro" />
+        <item itemvalue="JUnit.RomeuJulietaTest2.passando13Retorna13Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef0da838-b507-4ca6-a3bc-3f8b6a209e65" name="Changes" comment="" />
+      <created>1669301947144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669301947144</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$RomeuJulietaTest_passando3RetornaQueijo.ic" NAME="RomeuJulietaTest.passando3RetornaQueijo Coverage Results" MODIFIED="1669641110878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

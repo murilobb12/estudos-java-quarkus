@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6660f63-8407-4416-a277-ff1457b6e85f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tecnicas/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tecnicas/Data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ecommerce-store-quarkus/ecommerce-store-quarkus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ecommerce-store/ecommerce-store.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ecommerce/ecommerce (1).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/parking-control.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-control/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/ParkingControlApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/ParkingControlApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/endpoints/ParkingEndpoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/endpoints/ParkingEndpoints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/models/ParkingSpotModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/models/ParkingSpotModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/repositories/ParkingSpotRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-control/target/classes/com/api/parkingcontrol/repositories/ParkingSpotRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../praticandoJava/out/production/praticandoJava/Lists/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../praticandoJava/out/production/praticandoJava/Lists/Aulas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../praticandoJava/out/production/praticandoJava/Lists/TestaListaDeAula.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F8TpCh6dFrUvvQLdEqs6ecgd2C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/F7287356/OneDrive - Banco do Brasil S.A/Área de Trabalho/Java/LetsCode/aulas"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aulas.Tecnicas.Data.Data" />
+      <module name="aulas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aulas.Tecnicas.Data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6660f63-8407-4416-a277-ff1457b6e85f" name="Changes" comment="" />
+      <created>1663872891646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663872891646</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5054c178-5e05-49b1-bfb9-32ded79054cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/java_/EstudosMurilo/Datas/Datas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Maven/Loja/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_/EstudosMurilo/NovidadesJava8/StreamToMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_/EstudosMurilo/NovidadesJava8/StreamToMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LetsCode/java_/EstudosMurilo/Colecoes/HashSet/HashSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LetsCode/java_/EstudosMurilo/Colecoes/HashSet/HashSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LetsCode/java_/EstudosMurilo/NovidadesJava8/StreamToMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LetsCode/java_/EstudosMurilo/NovidadesJava8/StreamToMap.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/java_/EstudosMurilo/Colecoes/LinkedList/LinkedLists.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F8UKf5yooUgWgjTE6IhIJ2S2Qw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/F7287356/OneDrive - Banco do Brasil S.A/Área de Trabalho/Java/LetsCode/JDBC & Factory",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Datas">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="executavel.App" />
+      <module name="LetsCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="executavel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Datas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_.EstudosMurilo.Datas.Datas" />
+      <module name="LetsCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_.EstudosMurilo.Datas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashSets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_.EstudosMurilo.Colecoes.HashSet.HashSets" />
+      <module name="LetsCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_.EstudosMurilo.Colecoes.HashSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Optional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_.EstudosMurilo.NovidadesJava8.Optional" />
+      <module name="LetsCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_.EstudosMurilo.NovidadesJava8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamToMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java_.EstudosMurilo.NovidadesJava8.StreamToMap" />
+      <module name="LetsCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java_.EstudosMurilo.NovidadesJava8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Datas" />
+        <item itemvalue="Application.StreamToMap" />
+        <item itemvalue="Application.HashSets" />
+        <item itemvalue="Application.Optional" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5054c178-5e05-49b1-bfb9-32ded79054cf" name="Changes" comment="" />
+      <created>1663873142446</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663873142446</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_/EstudosMurilo/Colecoes/Arrays/Arrays.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

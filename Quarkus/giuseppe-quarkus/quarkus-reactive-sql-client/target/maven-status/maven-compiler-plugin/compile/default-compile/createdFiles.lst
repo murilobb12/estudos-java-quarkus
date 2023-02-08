@@ -1,0 +1,4 @@
+br\com\murilo\ExampleResource.class
+br\com\murilo\repository\ClienteRepository.class
+META-INF\panache-archive.marker
+br\com\murilo\rest\ClienteResource.class

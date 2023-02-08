@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.quarkus:quarkust-resteasy-mutiny:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/quarkus/quarkust-resteasy-mutiny/unknown/quarkust-resteasy-mutiny-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/quarkus/quarkust-resteasy-mutiny/unknown/quarkust-resteasy-mutiny-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/quarkus/quarkust-resteasy-mutiny/unknown/quarkust-resteasy-mutiny-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

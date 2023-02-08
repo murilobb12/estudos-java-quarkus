@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="442a851c-1f29-4e31-b2a6-b2b19cd3ae72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/build-metrics.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/build-metrics.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/DepartamentoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/DepartamentoDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioIdadeNomeResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioIdadeNomeResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioPorDepartamentoResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/murilo/dto/FuncionarioPorDepartamentoResponse.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/br/com/murilo/service/FuncionarioService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2H5ifvADXDj7wf9ose9oXSgSJKX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/F7287356/OneDrive - Banco do Brasil S.A/Área de Trabalho/Java/LetsCode/Quarkus/teste-quarkus"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.murilo.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile quarkus:dev" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Encrypt64" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.murilo.Encrypt64" />
+      <module name="teste-quarkus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.murilo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Encrypt64" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="442a851c-1f29-4e31-b2a6-b2b19cd3ae72" name="Changes" comment="" />
+      <created>1667581454786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667581454786</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
