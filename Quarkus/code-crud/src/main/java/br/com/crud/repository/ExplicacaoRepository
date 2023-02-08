@@ -1,0 +1,2 @@
+-Dentro dessa classe devemos criar uma classe ClasseRepository, onde ela ira implementar PanacheRepository<Classe>
+-Ela serve para nós chamarmos dentro da classe Service

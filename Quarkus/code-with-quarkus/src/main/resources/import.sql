@@ -1,0 +1,1 @@
+--INSERT INTO Fruta(id, nome, quantidade) values(1, 'Banana', 50);

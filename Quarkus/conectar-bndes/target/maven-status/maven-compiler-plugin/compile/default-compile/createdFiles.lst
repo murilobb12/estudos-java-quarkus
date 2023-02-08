@@ -1,0 +1,6 @@
+br\com\murilo\rest\BndesResource.class
+br\com\murilo\model\SolicitacaoServico.class
+META-INF\panache-archive.marker
+br\com\murilo\service\GerarToken.class
+br\com\murilo\service\BndesProxy.class
+br\com\murilo\model\Status.class

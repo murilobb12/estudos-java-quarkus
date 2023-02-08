@@ -1,0 +1,6 @@
+br\com\murilo\service\CustomerService.class
+br\com\murilo\model\Customer.class
+META-INF\panache-archive.marker
+br\com\murilo\repository\CustomerRepository.class
+br\com\murilo\GreetingResource.class
+br\com\murilo\resource\CustomerResource.class

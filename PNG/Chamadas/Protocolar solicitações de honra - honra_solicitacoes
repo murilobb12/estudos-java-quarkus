@@ -1,0 +1,31 @@
+Protocolar solicitações de honra
+
+	POST /v1/honra/solicitacoes
+
+	Description
+		-O campo status da resposta indicará que a solicitação está sendo processada. Posteriormente deverá ser realizada uma consulta para se obter o resultado da solicitação.
+
+	Parameters:
+		Type: Body
+		Name: body -required-
+		Desciption: Lote com solicitações de honra.
+		Schema: EntradaLoteSolicitacoesHonraDTO.class
+
+	Responses:
+		HTTP Code: 201
+			-Description: Solicitação recebida com sucesso e em processamento. Para consultar o resultado do processamento, deve-se chamar o serviço "Consultar resultado de um protocolo de solicitações de honra".
+			-Schema: SolicitacaoRetorno.class
+		HTTP Code: 400
+			-Description: Solicitação rejeitada. O motivo pode ser consultado na mensagem de retorno.
+			-Schema: SolicitacaoRetorno.class
+		HTTP Code: 403
+			-Description: Solicitação não permitida neste momento. O horário de funcionamento para essa PI é entre 08h00 e 20h00 nos dia úteis.
+			-Schema: SolicitacaoRetorno.class
+
+	Consumes:
+		-application/json; charset=utf-8
+	Produces:	
+		-application/json
+
+	Tags:
+		solicitacoes honra

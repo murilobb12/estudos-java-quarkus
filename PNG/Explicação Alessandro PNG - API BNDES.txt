@@ -1,0 +1,24 @@
+Explicação Alessandro PNG - API BNDES
+
+Acessar KDz
+Visao Dbeaver
+
+Desenvolvimento > DOG1 > Botao Direito > SQL Editor > PNG
+
+SELECT * FROM DB2PNG.SLCT_SRVC
+WHERE CD_TIP_SRVC = 1 AND CD_EST_ATU = 8
+#1 = Honra
+#8 = Processada
+
+
+RPF
+
+Ver Documentação da tabela
+Pelo MAI:
+Verificar a tabela
+Roscoe
+TablesSpaces:  VE1 S1PNG040 
+
+Pelo AD Intranet:
+Metadada de Modelos de Dados > PNG > 
+https://plataforma.atendimento.bb.com.br:49286/estatico/gaw/app/spas/index/index.app.html?app=aqtMetadados&cd_modo_uso=46&papp-termo=PNG#/

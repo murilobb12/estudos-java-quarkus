@@ -1,0 +1,8 @@
+br\com\murilo\repository\BitcoinRepository.class
+br\com\murilo\model\Usuario.class
+br\com\murilo\resource\BitcoinResource.class
+br\com\murilo\model\Bitcoin.class
+META-INF\panache-archive.marker
+br\com\murilo\GreetingResource.class
+br\com\murilo\model\Ordem.class
+br\com\murilo\resource\UsuarioResource.class

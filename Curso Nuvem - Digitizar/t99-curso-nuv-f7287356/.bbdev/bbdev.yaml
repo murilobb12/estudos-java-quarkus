@@ -1,0 +1,11 @@
+database: "h2"
+archetypeVersion: "2.1.7"
+sigla: "t99"
+package: "br.com.bb.t99"
+provimentoIIB: "br.com.bb.t99.operacao:Op5207120-v1:2.2.0-SNAPSHOT:CadastrarCliente"
+consumoIIB: "br.com.bb.t99.operacao:Op5207120-v1:2.2.0-SNAPSHOT:CadastrarCliente"
+groupId: "br.com.bb.t99"
+artifactId: "t99-curso-nuv-f7287356"
+version: "0.1.0-SNAPSHOT"
+treinamento: "true"
+createAt: 2022-11-03T10:59:12.247141

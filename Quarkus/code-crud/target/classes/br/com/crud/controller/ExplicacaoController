@@ -1,0 +1,4 @@
+-O Controller é responsável por armazenar os nossos endpoints.
+-Devemos passar a url da nossa rota com a anotação @Path("products").
+-Passar a anotação @Consumes(MediaType.APPLICATION_JSON) para dizer que ao chamar o endpoint, iremos consumir um arquivo tipo JSON.
+-Passar a anotação @Produces(MediaType.APPLICATION_JSON) para dizer que ao chamar o endpoint, será produzido um arquivo tipo JSON.

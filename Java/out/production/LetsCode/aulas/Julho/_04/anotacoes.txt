@@ -1,0 +1,7 @@
+Método:
+-Sobrecarga é quando tem o número e tipo de parâmetros
+
+Construtor
+-Quando a gente não criar nenhum construtor, ele automaticamente cria um construtor vazio();
+-É possível criar um construtor padrão e a partir dele criar um outro construtor passando no this() todos
+os parâmetros necessários, porém é necessário passar na ordem correta os parâmetros.
